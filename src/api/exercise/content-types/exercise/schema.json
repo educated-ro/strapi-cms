@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "singularName": "exercise",
+    "pluralName": "exercises",
+    "displayName": "exercise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "one-option",
+        "multiple-options",
+        "code",
+        "with-sub-items",
+        "short-answer"
+      ]
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "requirement": {
+      "type": "richtext"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "exercises.option"
+    },
+    "subItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "assessment.exercise-sub-tree"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_assessment_metadata",
+  "info": {
+    "displayName": "Metadata",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "started": {
+      "type": "boolean"
+    },
+    "timer": {
+      "type": "datetime"
+    }
+  }
+}

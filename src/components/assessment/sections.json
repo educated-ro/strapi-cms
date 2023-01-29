@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_assessment_sections",
+  "info": {
+    "displayName": "Sections",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "points": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercise.exercise"
+    }
+  }
+}

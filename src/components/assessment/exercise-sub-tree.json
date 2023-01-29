@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_assessment_exercise_sub_trees",
+  "info": {
+    "displayName": "ExerciseSubTree"
+  },
+  "options": {},
+  "attributes": {
+    "requirement": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "one-option",
+        "multiple-options",
+        "code",
+        "with-sub-items",
+        "short-answer"
+      ]
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "exercises.option"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assessment_sessions",
+  "info": {
+    "singularName": "assessment-session",
+    "pluralName": "assessment-sessions",
+    "displayName": "Assessment-Session",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "student": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "studentAnswer": {
+      "type": "json"
+    },
+    "assessment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::assessment.assessment"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "not-started",
+        "in-progress",
+        "finished",
+        "under-evaluation"
+      ]
+    },
+    "submited": {
+      "type": "boolean"
+    },
+    "rightAnswer": {
+      "type": "json"
+    }
+  }
+}

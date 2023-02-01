@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "singularName": "answer",
+    "pluralName": "answers",
+    "displayName": "Answers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exercise": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exercise.exercise"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "compile",
+        "compare",
+        "equals"
+      ]
+    },
+    "answer": {
+      "type": "dynamiczone",
+      "components": [
+        "exercises.answer",
+        "exercises.file"
+      ]
+    }
+  }
+}

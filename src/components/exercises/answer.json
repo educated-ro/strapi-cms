@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_exercises_answers",
+  "info": {
+    "displayName": "Answer"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "exercise",
     "pluralName": "exercises",
-    "displayName": "exercise",
+    "displayName": "Exercises",
     "description": ""
   },
   "options": {
@@ -45,6 +45,27 @@
       "type": "component",
       "repeatable": true,
       "component": "assessment.exercise-sub-tree"
+    },
+    "author": {
+      "type": "string"
+    },
+    "dificulty": {
+      "type": "integer"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subject.subject"
+    },
+    "chapter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chapter.chapter"
+    },
+    "labels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::label.label"
     }
   }
 }

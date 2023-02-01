@@ -19,6 +19,9 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::subject.subject"
+    },
+    "value": {
+      "type": "string"
     }
   }
 }

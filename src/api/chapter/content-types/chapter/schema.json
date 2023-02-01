@@ -22,6 +22,9 @@
     },
     "value": {
       "type": "string"
+    },
+    "test": {
+      "type": "integer"
     }
   }
 }

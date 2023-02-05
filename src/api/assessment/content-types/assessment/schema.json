@@ -24,6 +24,11 @@
       "type": "component",
       "repeatable": true,
       "component": "assessment.sections"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subject.subject"
     }
   }
 }

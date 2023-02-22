@@ -45,6 +45,11 @@
     },
     "finishAt": {
       "type": "datetime"
+    },
+    "trainer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
